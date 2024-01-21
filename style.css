@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #353836;
+
+  font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #09c372;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    position: fixed;
+    background-color: black;
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .pp{
+    font-size: 60px;
+    font-family: 'Alex Brush', 'cursive' ;
+}
+
+img{
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+  height: 350px;
+  width: 250px;
+}
+}
+
+.pp{
+    font-size: 60px;
+    font-family: 'Alex Brush', 'cursive' ;
+}
+
+img{
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 350px;
+  width: 250px;
+}
+
+.ppp{
+  color: #CBFFA9;
+  height: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.container .progress-container {
+  margin-bottom: 25px;
+}
+
+.container .progress-container h4 {
+  margin: 0 0 15px 15px;
+  letter-spacing: .5px;
+}
+
+.container .progress-container .progress-bar {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  border-radius: 30px;
+  
+  box-shadow: 3px 4px 5px 0px rgba(204 185 185 / .75);
+}
+
+.container .progress-container .progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(76, 175, 80, 1) 50%, rgba(50, 222, 132, 1) 100%);
+  transition: width .5s linear;
+}
